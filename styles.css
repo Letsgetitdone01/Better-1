@@ -205,11 +205,11 @@ animation: fade-up 650ms 400ms backwards;
 }
 
 @keyframes fade-up {
-   0{
+   0% {
     opacity: 0;
     transform:translateY(40px)
    } 
-   100%{
+   100% {
     opacity: 1;
     transform: translateY(0)
    }
@@ -307,7 +307,7 @@ animation: animate-wave 500ms infinite ease-in-out;
     margin-bottom: 135px;
 }
 
-.project: :last-child {
+.project:last-child {
     margin bottom:40px;
 }
 
@@ -321,7 +321,7 @@ animation: animate-wave 500ms infinite ease-in-out;
     box-shadow: 0 20px 80px rgba(0, 0, 0, 0.45);
     border-radius: 20px;
     overflow: hidden;
-    z-index: 2;
+   position: relative;
 }
 
 .project__wrapper:before {
@@ -334,7 +334,8 @@ animation: animate-wave 500ms infinite ease-in-out;
   background-color: #1c1d25;
   opacity: 0;
   transition:opacity 450ms ease;
-  
+   z-index: 2;
+  transform: translateY(100%);
 }
 
 .project:hover .project__wrapper:before {
