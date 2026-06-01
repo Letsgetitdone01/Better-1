@@ -7,11 +7,11 @@
 }
 
 html {
-scroll-behavior: smooth;
+ scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4,h5, h6, span {
-    color: #242422;
+    color: #242424;
     text-align: center;
     line-height: 1.25;
 }
@@ -25,9 +25,10 @@ p {
     font-size: 16px;
 }
 
-a {text-decoration: none;
-position: relative;
-transition: opacity 300ms ease;
+a {
+    text-decoration: none;
+    position: relative;
+    transition: opacity 300ms ease;
 }
 
 i:hover {
@@ -48,7 +49,7 @@ i:hover {
     background-color: #fff;
 }
 
-.link__hover-effect--black:after{
+.link__hover-effect--black:after {
     background-color: #000;
 }
 
@@ -388,7 +389,7 @@ margin-right: 16px;
 /*FOOTER*/
 
 footer {
-    background-color: #2424;
+    background-color: #242424;
 }
 
 .footer__row{
